@@ -41,7 +41,7 @@ frontend karimadel-frontend
         default_backend karimadel-backend
 
 frontend karimadel-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/karimadel.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.karimadel.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend karimadel-backend
 
